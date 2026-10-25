@@ -569,6 +569,13 @@ body{font-size:16px;line-height:1.55;min-height:100vh;display:flex;flex-directio
 .international-opportunities li{font-size:14px;line-height:1.6;margin:0 0 8px}
 .join-opportunities a,.international-opportunities a{color:inherit;text-decoration:underline;text-underline-offset:3px}
 
+/* A quieter transition from the homepage research introduction into recruiting. */
+.home-join.band{background:#f1f6f3;color:var(--ink);border-top:1px solid #dce8e2;border-bottom:1px solid #dce8e2}
+.home-join.band p{color:var(--muted)}
+.home-join.band .text-link{border-color:#8eaaa0;color:var(--green)}
+.home-join.band a:hover{color:#004c37}
+.home-join .join-opportunities{border-top-color:#cdded7}
+
 .course h3 .course-level{display:inline-block;vertical-align:baseline;margin-left:8px;font-size:12px;line-height:1.4;font-weight:400;letter-spacing:0;color:var(--muted)}
 .course-code-note{font-size:11px;font-weight:400;color:var(--muted);white-space:nowrap}
 .other-teaching-section{padding-bottom:30px}
