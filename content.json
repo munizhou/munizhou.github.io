@@ -1,0 +1,1184 @@
+{
+  "people": [
+    {
+      "name": "Vincent David",
+      "role": "Postdoctoral researcher",
+      "text": "Solar-wind turbulence, plasma heating, and the effects of expansion on Alfvénic turbulence.",
+      "image": "vincent-david.jpg",
+      "position": "Department of Physics and Astronomy · Dartmouth College",
+      "background": [
+        "Ph.D. · Université Paris-Saclay, France",
+        "M.A. · Université Paris-Saclay"
+      ],
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=8L5n1OkAAAAJ&hl=en"
+        },
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0000-0002-5013-7705"
+        },
+        {
+          "label": "Dartmouth profile",
+          "url": "https://physics.dartmouth.edu/people/vincent-david"
+        }
+      ],
+      "email": "Vincent.David@dartmouth.edu",
+      "news": [
+        {
+          "title": "Vincent David Studies Plasma Turbulence in the Solar Wind",
+          "url": "https://guarinigrad.dartmouth.edu/blog/2026/09/21/postdoc-vincent-david-studies-plasma-turbulence-in-the-solar-wind/"
+        }
+      ]
+    },
+    {
+      "name": "Dawei Dai",
+      "role": "Graduate student",
+      "text": "",
+      "image": "dawei-dai.png",
+      "position": "Department of Physics and Astronomy · Dartmouth College",
+      "links": [
+        {
+          "label": "Dartmouth profile",
+          "url": "https://physics.dartmouth.edu/people/dawei-dai"
+        }
+      ],
+      "email": "Dawei.Dai.GR@dartmouth.edu",
+      "background": [
+        "B.S. · Tsinghua University"
+      ]
+    },
+    {
+      "name": "Zhifei Gui",
+      "role": "Graduate student",
+      "text": "",
+      "image": "zhifei-gui.jpg",
+      "external_profile_url": "https://zhifeigui.github.io/",
+      "position": "Department of Physics and Astronomy · Dartmouth College",
+      "links": [
+        {
+          "label": "Dartmouth profile",
+          "url": "https://physics.dartmouth.edu/people/zhifei-gui"
+        }
+      ],
+      "background": [
+        "B.S. · Huazhong University of Science and Technology"
+      ]
+    },
+    {
+      "name": "Shuntaro Yoshino",
+      "role": "Visiting student from Tohoku University",
+      "position": "",
+      "text": "Weibel magnetogenesis in electron–ion plasmas.",
+      "image": "shuntaro-yoshino.png"
+    },
+    {
+      "name": "Joseph Kuester",
+      "role": "Undergrad student",
+      "text": "I am a current senior at Dartmouth College from Atlanta, Georgia, majoring in physics and music. I am interested in plasma physics as it applies to fusion, specifically with fine-tuning magnetic confinement fusion through theory and computation work. I plan on applying for PhD positions in physics during this upcoming cycle. Outside of physics, I am a huge music nerd; I listen to everything from late Austrio-German romanticism to hardcore punk and free jazz. In my free time I like to run, compose music, and read mystery novels.",
+      "image": "joseph-kuester.jpg",
+      "biography": "My summer research was supported by the Arthur L. Irving Institute for Energy and Society Student Grant program at Dartmouth College. I worked on simulations of the gas dynamic trap (GDT) fusion configuration under the mentorship of Dr. Yichen Fu and Professor Ben Zhu at Columbia University."
+    },
+    {
+      "name": "Dion Li",
+      "image": "dion-li.png",
+      "external_profile_url": "https://sites.google.com/view/dionli",
+      "role": "Graduate student at MIT",
+      "text": "His featured research explores kinetic processes in helicity-constrained magnetic-field decay and the role of ion-acoustic instabilities in magnetic reconnection.",
+      "links": [
+        {
+          "label": "Personal website",
+          "url": "https://sites.google.com/view/dionli"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=fkbYQpYAAAAJ&hl=en"
+        }
+      ],
+      "background": [
+        "B.S. · University of Michigan"
+      ]
+    },
+    {
+      "name": "Alex Velberg",
+      "role": "Graduate student at MIT",
+      "position": "Department of Nuclear Science and Engineering",
+      "image": "alex-velberg.jpg",
+      "external_profile_url": "https://engineering.mit.edu/people/alexander-a-velberg",
+      "text": "Alex studies how machine learning can reveal useful equations for nonlinear plasma dynamics. His research uses data from detailed plasma simulations to develop simpler models that capture the effects of small-scale processes, with the aim of making simulations of astrophysical and fusion plasmas more efficient.",
+      "links": [
+        {
+          "label": "MIT profile",
+          "url": "https://engineering.mit.edu/people/alexander-a-velberg"
+        },
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0000-0003-2922-7287"
+        }
+      ]
+    }
+  ],
+  "areas": [
+    {
+      "slug": "magnetogenesis",
+      "title": "Plasma Physics for Cosmic Magnetogenesis",
+      "short": "Plasma Physics for Cosmic Magnetogenesis",
+      "category": "Magnetic-field origins and cosmological connections",
+      "question": "Where do the first cosmic magnetic fields come from?",
+      "summary": "We study how plasma processes generate seed magnetic fields and how these fields connect to the magnetization of the Universe.",
+      "image": "magnetogenesis-theme-cropped.png",
+      "overview_image": "magnetogenesis-research-overview-v3.png",
+      "alt": "Three volume renderings of magnetic-field strength in a collisionless plasma simulation",
+      "caption": "Magnetic-field structure in collisionless plasma simulations · Zhou et al.",
+      "tags": [
+        "Cosmic magnetogenesis",
+        "Seed magnetic fields",
+        "Cosmological connections"
+      ],
+      "body": [
+        "Magnetic fields fill planets, stars, galaxies, and the space between them, yet many cosmic environments may have begun nearly unmagnetized. Before turbulence can amplify a magnetic field, some plasma process must first create a microscopic seed.",
+        "We study how collisionless particle dynamics, velocity-space anisotropy, and the Weibel instability generate those first fields. We then ask how the seeds evolve, merge, and connect kinetic plasma physics to the large-scale magnetization of the Universe."
+      ],
+      "projects": [
+        {
+          "slug": "shear-driven-weibel",
+          "title": "Spontaneous Magnetization of Collisionless Plasma",
+          "highlight_title": "Spontaneous magnetization",
+          "stage": "Published work",
+          "question": "How can a shear flow generate the first magnetic fields?",
+          "summary": "",
+          "papers": [
+            9
+          ],
+          "details": [
+            "Magnetic fields pervade planets, stars, galaxies, and the diffuse matter between galaxies, shaping how cosmic plasmas move, radiate, and exchange energy. Yet many astrophysical environments may begin essentially unmagnetized, and a turbulent dynamo can amplify magnetic fields only after some earlier process supplies a seed. This project asks how an ordinary large-scale plasma flow can create that first field spontaneously, without requiring any pre-existing magnetization.",
+            "The key is that a shear flow varies across space. In a collisionless plasma, particles with different thermal velocities freely stream across the shear and carry momentum between neighboring regions. This phase mixing progressively distorts the velocity distribution and generates pressure anisotropy, storing free energy in particle motion. Once the anisotropy becomes sufficiently strong, it triggers the Weibel instability, which converts that free energy into microscopic magnetic fields. As those fields grow, they bend and trap particle trajectories, reduce the anisotropy, and eventually saturate the instability. Using a pair plasma, in which the two species have equal masses and therefore respond on the same kinetic timescale, this project isolates the fundamental mechanism by which a generic shear flow can magnetize an initially unmagnetized plasma."
+          ],
+          "keyword": "Spontaneous magnetization",
+          "cover": {
+            "image": "spontaneous-magnetization.png",
+            "alt": "Evolution of a collisionless velocity distribution under shear, shown at four times.",
+            "fit": "contain",
+            "position": {
+              "x": 50,
+              "y": 50
+            }
+          }
+        },
+        {
+          "slug": "electron-ion-weibel-seeding",
+          "title": "Electron-ion Weibel Seeding",
+          "stage": "Current project",
+          "question": "How are magnetic seed fields generated in an initially unmagnetized electron-ion plasma?",
+          "summary": "",
+          "papers": [],
+          "details": [
+            "The spontaneous-magnetization project establishes the basic mechanism in a pair plasma, where the positively and negatively charged particles have equal masses. Most ordinary astrophysical plasmas instead contain light electrons and much heavier ions. This mass separation introduces two very different kinetic timescales: electrons rapidly develop anisotropy, excite electron-scale Weibel modes, and become magnetized, while the ions can remain comparatively unmagnetized and continue to carry most of the bulk kinetic energy. Electron saturation therefore need not mark the end of magnetogenesis; it can be only the first stage of a more complex evolution.",
+            "Using high-resolution, fully kinetic simulations with a realistic electron-to-ion mass ratio, this project follows the plasma beyond that initial electron-scale saturation. We find that the ions continue to sustain the shear and eventually drive a second, ion-dominated instability. This later stage draws on the much larger reservoir of ion kinetic energy, reorganizes the field toward ion scales, and amplifies the magnetic energy by orders of magnitude beyond the electron saturation level. The result identifies a kinetic route to stronger and more persistent seed fields in realistic electron-ion plasmas, providing more favorable initial conditions for subsequent magnetic relaxation and turbulent-dynamo amplification in astrophysical systems."
+          ],
+          "keyword": "Electron-ion Weibel seeding",
+          "cover": {
+            "image": "ei_weibel-cropped.mp4",
+            "alt": "Evolution of magnetic-field structure generated by the Weibel instability in an electron-ion plasma.",
+            "fit": "contain",
+            "position": {
+              "x": 50,
+              "y": 50
+            }
+          },
+          "highlight_title": "Electron-ion Weibel seeding",
+          "manuscripts": [
+            {
+              "title": "Magnetogenesis via Weibel Instability in an Electron–Ion Plasma",
+              "authors": [
+                "Shuntaro Yoshino",
+                "Muni Zhou",
+                "Alexander Chernoglazov",
+                "Makoto Hirota",
+                "Lorenzo Sironi",
+                "Hayk Hakobyan"
+              ],
+              "status": "In preparation"
+            }
+          ]
+        },
+        {
+          "slug": "mirror-firehose-weibel-relaxation",
+          "title": "Role of Mirror and Firehose Instabilities on Weibel Relaxation",
+          "stage": "Published project",
+          "question": "How can pressure-anisotropy instabilities reshape the relaxation of Weibel-generated magnetic fields?",
+          "summary": "",
+          "papers": [
+            0
+          ],
+          "inline_references": true,
+          "details": "After the Weibel instability generates magnetic fields on microscopic scales, those fields must merge and transfer energy to larger scales if they are to survive and contribute to cosmic magnetization. During this decay, changes in magnetic-field strength can produce pressure anisotropy and trigger mirror or firehose instabilities. This project explores how the firehose instability can release magnetic-field-line tension—the restoring force that helps drive reconnection—and thereby potentially slow the merging of magnetic structures in some plasma regimes. Rather than establishing a universal suppression of inverse transfer, the study identifies a kinetic effect that may alter the relaxation pathway. How the nonlinear evolution proceeds remains an open question, because three-dimensional dynamics, guide fields, magnetization, and other plasma regimes may substantially change the outcome.",
+          "keyword": "Mirror and firehose instabilities",
+          "cover": {
+            "image": "mirror-firehose-weibel-relaxation.png",
+            "alt": "Two stacked panels showing the evolution of the magnetic-energy spectrum and the plasma distribution relative to mirror and firehose instability thresholds.",
+            "fit": "contain",
+            "position": {
+              "x": 50,
+              "y": 50
+            }
+          },
+          "highlight_title": "Mirror and Firehose for Weibel Relaxation",
+          "highlight_cover": {
+            "image": "mirror-firehose-weibel-relaxation.png",
+            "alt": "Evolution of the magnetic-energy spectrum during Weibel-field relaxation.",
+            "fit": "cover",
+            "position": {
+              "x": 50,
+              "y": 0
+            }
+          }
+        },
+        {
+          "slug": "kinetic-constraints-weibel-relaxation",
+          "title": "Kinetic Constraints on Weibel Relaxation",
+          "stage": "Current project",
+          "question": "How do kinetic plasma processes constrain the relaxation of Weibel-generated magnetic fields?",
+          "summary": "",
+          "papers": [],
+          "manuscripts": [
+            {
+              "title": "Kinetic Constraints on Subion Magnetic Relaxation",
+              "authors": [
+                "Dion Li",
+                "Muni Zhou"
+              ],
+              "status": "In preparation"
+            }
+          ],
+          "details": "The Weibel instability can generate strong magnetic fields on microscopic plasma scales, but creating those fields is only the beginning of the story: to explain phenomena such as gamma-ray-burst afterglows, we also need to know how long the fields survive downstream of a collisionless shock and how they evolve over much longer times. Small-scale magnetic turbulence can decay rapidly, while reconnection and the merger of current-carrying structures can simultaneously move magnetic energy toward larger scales. This project asks what constrains that relaxation when the usual ideal-fluid invariants no longer apply. Using two- and three-dimensional electron–ion particle-in-cell simulations, we find that a newly defined kinetic version of the Saffman helicity integral remains conserved even when conventional invariants fail in the kinetic range. This constraint links the weakening of the magnetic field to growth of its characteristic scale, providing a framework for the long-term evolution of Weibel-generated fields, while magnetic reconnection supplies the physical timescale for that evolution.",
+          "keyword": "Kinetic constraints on Weibel relaxation",
+          "lead": {
+            "name": "Dion Li",
+            "url": "https://sites.google.com/view/dionli",
+            "affiliation": "MIT"
+          },
+          "cover": {
+            "image": "kinetic-constraints-weibel-relaxation.png",
+            "alt": "Normalized kinetic Saffman helicity integral, conventional helicity integral, and anastrophy during two-dimensional subion magnetic relaxation.",
+            "fit": "contain",
+            "position": {
+              "x": 50,
+              "y": 50
+            }
+          }
+        },
+        {
+          "slug": "cosmological-connections",
+          "title": "Cosmological implication",
+          "highlight_title": "Cosmological implication",
+          "stage": "Exploratory direction",
+          "question": "How can plasma magnetogenesis connect to cosmological questions?",
+          "summary": "",
+          "papers": [],
+          "details": "",
+          "keyword": "Cosmological implication",
+          "cover": {
+            "image": "cosmology-upper-panel.mp4",
+            "alt": "Cosmological simulation showing the evolution of the source plane, with time and comoving coordinates.",
+            "fit": "contain",
+            "position": {
+              "x": 50,
+              "y": 50
+            }
+          },
+          "lead": {
+            "name": "Dr. Hanjue Zhu (朱涵珏)",
+            "url": "https://www.ias.edu/scholars/hanjue-zhu",
+            "affiliation": "IAS/Princeton",
+            "prefix": "collaborator, "
+          }
+        }
+      ]
+    },
+    {
+      "slug": "dynamo-and-magnetic-field-relaxation",
+      "title": "Dynamo & Magnetic Field Relaxation",
+      "short": "Dynamo & Magnetic Field Relaxation",
+      "category": "Magnetic-field amplification, evolution & relaxation",
+      "question": "How do magnetic fields grow, evolve, and relax?",
+      "summary": "We investigate turbulent dynamo amplification and the subsequent evolution and relaxation of magnetic fields, focusing on how kinetic plasma processes shape their strength and structure.",
+      "image": "dynamo-theme-panels.png",
+      "alt": "Magnetic-field structure in a collisionless plasma simulation",
+      "caption": "",
+      "tags": [
+        "Turbulent dynamo",
+        "Magnetic-field evolution",
+        "Magnetic relaxation"
+      ],
+      "body": [
+        "Magnetic fields can grow dramatically when turbulent motions stretch and fold them, but their evolution does not end when amplification saturates. The resulting structures continue to decay, merge, and reorganize across a wide range of scales.",
+        "We investigate turbulent dynamo amplification together with the subsequent relaxation of magnetic fields. Our work asks how reconnection, pressure anisotropy, particle heating, and other kinetic effects determine the field strength, characteristic scale, and long-term evolution of collisionless plasmas."
+      ],
+      "projects": [
+        {
+          "slug": "pair-plasma-dynamo",
+          "title": "Turbulent Dynamo and Multi-Phase Evolution of Magnetic Fields in Collisionless Plasma",
+          "highlight_title": "Collisionless turbulent dynamo",
+          "stage": "Published work",
+          "question": "How do magnetic fields emerge, amplify, and evolve in a collisionless plasma?",
+          "summary": "",
+          "papers": [
+            4
+          ],
+          "details": [
+            "Cosmic magnetic fields may begin as weak seeds and then be amplified by turbulent plasma flows, but these two stages have often been studied separately. We develop a unified, first-principles picture of how an initially unmagnetized collisionless plasma can generate, amplify, and sustain magnetic fields. Large-scale motions create pressure anisotropy through phase mixing, triggering the Weibel instability and producing microscopic seed fields. Once the plasma becomes magnetized, the fields couple to the turbulent flow and are stretched and amplified. Additional kinetic instabilities scatter particles, regulate the field structure, and support the turbulence. The dynamo ultimately raises the magnetic energy toward equipartition with the turbulent flow, providing a self-consistent pathway from an unmagnetized plasma to dynamically significant cosmic magnetic fields.",
+            "The magnetic field evolves through several connected phases. Weibel seeding first creates fields at kinetic scales; these seed structures then coalesce before the large-scale flow drives an accelerating dynamo. As the field grows, pressure-anisotropy instabilities become increasingly important: their fluctuations scatter particles, alter the effective plasma collisionality, and regulate the final stage of amplification. Following these phases together reveals how the characteristic field strength, scale, and morphology change continuously from the first microscopic seeds to a saturated, dynamically important magnetic field."
+          ],
+          "keyword": "Turbulent Dynamo and Multi-Phase Evolution",
+          "cover": {
+            "image": "dyanmo_phase.png",
+            "alt": "Schematic of four phases of collisionless magnetic-field evolution: Weibel seeding, seed-field coalescence, accelerating dynamo, and instability-regulated dynamo.",
+            "fit": "contain",
+            "position": {
+              "x": 50,
+              "y": 50
+            }
+          }
+        },
+        {
+          "slug": "magnetic-field-relaxation",
+          "title": "Magnetic Field Relaxation in a Collisionless Plasma",
+          "stage": "",
+          "question": "How do tangled magnetic fields decay and reorganize when particle collisions are rare?",
+          "summary": "",
+          "details": [
+            "Magnetic fields in space and astrophysical plasmas are often tangled and concentrated at relatively small scales. As the turbulence decays, magnetic reconnection allows neighboring structures to merge: magnetic energy decreases while the characteristic size of the surviving structures grows. Using two- and three-dimensional hybrid-kinetic simulations, we show that this relaxation remains self-similar in a collisionless plasma, but proceeds more slowly than predicted by fluid theories. As the field weakens, thermal pressure becomes increasingly important and slows reconnection, setting new rates for the decay of magnetic energy.",
+            "Reconnection also converts a nearly constant share of the released magnetic energy into ion heat, preferentially along the magnetic field. This creates pressure anisotropy and excites the firehose instability. Rather than stopping the transfer of magnetic energy toward larger scales, the resulting small-scale fluctuations regulate the anisotropy in reconnection outflows and leave the surrounding plasma ready for the next merger. The magnetic field can therefore continue to reorganize into larger, more coherent structures even when kinetic plasma effects are strong. This provides a possible route by which small-scale magnetic fields evolve into the large-scale fields found throughout the Universe."
+          ],
+          "keyword": "Magnetic field relaxation",
+          "papers": [],
+          "lead": {
+            "name": "Dawei Dai",
+            "url": "/team/dawei-dai/",
+            "affiliation": ""
+          },
+          "cover": {
+            "image": "dk_firehose.png",
+            "alt": "Magnetic field relaxation: magnetic-field structure and pressure-anisotropy distributions.",
+            "fit": "contain",
+            "position": {
+              "x": 50,
+              "y": 50
+            }
+          },
+          "manuscripts": [
+            {
+              "title": "Self-similar Decay in Collisionless Plasma Turbulence",
+              "authors": [
+                "Dawei Dai",
+                "Muni Zhou",
+                "Matthew W. Kunz",
+                "Zach Hemler"
+              ],
+              "status": "In preparation"
+            }
+          ],
+          "highlight_title": "Magnetic field relaxation"
+        }
+      ]
+    },
+    {
+      "slug": "radiative-turbulence",
+      "title": "Relativistic & Radiative Plasmas",
+      "short": "Relativistic & Radiative Plasmas",
+      "category": "Turbulence, radiation & relativistic flows",
+      "question": "What happens when turbulence, radiation, and pair creation evolve together?",
+      "summary": "Radiative turbulence, pair creation, and general-relativistic plasma dynamics.",
+      "image": "background-filaments-selected.png",
+      "overview_image": "radiative-research-overview-v3.png",
+      "tags": [
+        "Relativistic turbulence",
+        "Pair creation",
+        "Radiation"
+      ],
+      "body": [
+        "Plasmas around compact objects can be so energetic that radiation and electron–positron pair creation become part of the dynamics. These processes can change the particle population, redistribute energy, and feed back on the turbulence that produced the radiation.",
+        "We study the coupled evolution of turbulent particle energization, radiative losses, pair loading, and relativistic flows. Our work connects particle-scale kinetic physics with larger-scale plasma dynamics to understand composition and high-energy emission in extreme astrophysical environments."
+      ],
+      "projects": [
+        {
+          "slug": "radiative-kinetic-turbulence",
+          "title": "Radiative Kinetic Turbulence with QED Effects",
+          "stage": "Ongoing research",
+          "question": "How does radiation modify relativistic plasma turbulence?",
+          "summary": "",
+          "papers": [],
+          "details": "Near black holes, neutron stars, and other extreme environments, radiation is not merely a passive byproduct of plasma activity. Particles exchange energy with intense photon fields, high-energy photons create electron–positron pairs, and pairs can annihilate back into radiation. How turbulence energizes a plasma when these radiative and quantum-electrodynamic processes operate together remains an open problem, because the feedback can change the plasma composition, the energy available to each particle, and the spectrum of escaping radiation. This project studies that coupled system using self-consistent kinetic simulations that include inverse-Compton scattering, Klein–Nishina effects, pair production, and annihilation. By sustaining turbulent driving together with consistent particle and photon sources and sinks, we investigate how the plasma reaches a statistical steady state in which radiation, pair loading, and particle energization regulate one another, and how this balance shapes high-energy emission from astrophysical sources.",
+          "collaboration": {
+            "name": "Dr. Alexander Chernoglazov",
+            "url": "https://www.ias.edu/scholars/alexander-chernoglazov"
+          },
+          "keyword": "Radiative kinetic turbulence with QED effects",
+          "cover": {
+            "image": "radiative-kinetic-turbulence-stacked.png",
+            "alt": "Photon energy distributions above pair-produced-particle energy distributions in radiative kinetic turbulence.",
+            "fit": "contain",
+            "position": {
+              "x": 50,
+              "y": 50
+            }
+          },
+          "highlight_cover": {
+            "image": "radiative-kinetic-turbulence-photons.png",
+            "alt": "Evolution of photon energy distributions in radiative kinetic turbulence.",
+            "fit": "contain",
+            "position": {
+              "x": 50,
+              "y": 50
+            }
+          },
+          "highlight_title": "Turbulence with Radiation and QED"
+        },
+        {
+          "slug": "radiative-pair-production",
+          "title": "Pair Loading by Radiative Turbulence",
+          "stage": "Published work",
+          "question": "Can relativistic turbulence supply its own electron–positron pairs?",
+          "summary": "",
+          "papers": [
+            1
+          ],
+          "details": "Blazars are among the brightest gamma-ray sources in the universe, powered by relativistic plasma jets launched from supermassive black holes, yet two basic questions remain connected and unresolved: how these jets accelerate particles to extreme energies, and what particles the jets are made of. We investigate whether radiative turbulence can link the two. Turbulence initially accelerates electrons and positrons faster than radiation can cool them, producing energetic gamma rays; when those gamma rays encounter softer radiation surrounding the jet, they can be absorbed and converted into new electron–positron pairs, loading the jet with additional plasma. Using theory, particle-in-cell simulations, and Fokker–Planck modeling, we show that this pair loading creates a self-regulating cycle: the growing pair population lowers the energy available per particle, slows further acceleration, and eventually brings acceleration into balance with radiative cooling, shutting off additional pair creation. Applied to flat-spectrum radio-quasar jets, this mechanism can produce substantial in situ pair loading and provides a direct connection between turbulent particle acceleration, gamma-ray emission, and the composition of relativistic jets.",
+          "keyword": "Pair loading by radiative turbulence",
+          "cover": {
+            "image": "radiative-turbulence-pair-loading.png",
+            "alt": "Diagram of radiative turbulence embedded in a blazar jet, showing ambient broad-line and hot-dust radiation, inverse-Compton scattering, and pair loading.",
+            "fit": "contain"
+          }
+        },
+        {
+          "slug": "radiative-grmhd",
+          "title": "Black Hole Accretion with Radiation",
+          "stage": "Ongoing research",
+          "question": "How do radiation and plasma dynamics interact in general-relativistic systems?",
+          "summary": "",
+          "papers": [],
+          "details": [
+            "Accretion onto black holes powers some of the brightest objects in the Universe, from X-ray binaries to quasars. Yet we still do not fully understand how an accretion disk transports angular momentum, releases gravitational energy, and converts that energy into radiation. The standard thin-disk picture treats transport and heating as local processes, but its predicted instability in radiation-dominated disks motivates a more complete model combining strong gravity, radiation, and large-scale magnetic fields.",
+            "Using high-resolution radiation-GRMHD simulations, we find that efficient cooling can concentrate most of the gas into a razor-thin global current sheet at the disk midplane. Reconnection in this layer dissipates energy and produces radiation, while much of the inward mass transport occurs through magnetized envelopes above and below it, driven by large-scale magnetic torques. This layered structure offers a new picture of the organization, stability, and emission of luminous accretion disks."
+          ],
+          "keyword": "Black hole accretion with radiation",
+          "cover": {
+            "image": "black-hole-accretion-radiation.png",
+            "alt": "Gas-density structure in a radiative black-hole accretion simulation with an inset showing magnetic current-sheet structure.",
+            "fit": "contain",
+            "position": {
+              "x": 50,
+              "y": 50
+            }
+          },
+          "lead": {
+            "name": "Dr. Lizhong Zhang",
+            "url": "https://lizhongzhang.com/",
+            "affiliation": "IAS/U Columbia",
+            "prefix": "collaborator, "
+          },
+          "manuscripts": [
+            {
+              "title": "Accretion Disc as a Global Current Sheet",
+              "authors": [
+                "Sihao Cheng",
+                "Lizhong Zhang",
+                "Muni Zhou"
+              ],
+              "status": "In preparation"
+            }
+          ]
+        }
+      ],
+      "overview_visual": {
+        "image": "radiative-research-overview-v3.png",
+        "alt": "Two-panel visualization of filamentary plasma structures and multiscale turbulence"
+      }
+    },
+    {
+      "slug": "kinetic-turbulence",
+      "title": "Kinetic Turbulence & Solar Wind",
+      "short": "Kinetic Turbulence & Solar Wind",
+      "category": "Energy transfer & plasma heating",
+      "question": "Where does turbulent energy go when collisions are rare?",
+      "summary": "Electron heating, imbalanced solar-wind turbulence, and gyrokinetic studies of the kinetic cascade.",
+      "image": "solar-wind-kinetic-theme-v6.png",
+      "overview_image": "solar-wind-research-overview.png",
+      "alt": "Solar wind and Earth’s magnetosphere beside a phase-space visualization of kinetic turbulence",
+      "caption": "Solar–terrestrial illustration: NASA · Phase-space dynamics: Zhou et al. (2023)",
+      "tags": [
+        "Solar wind",
+        "Landau damping",
+        "Plasma heating"
+      ],
+      "body": [
+        "In the solar wind, a fluid description cannot capture the entire turbulent cascade. At small scales, particle motions and the shape of the velocity distribution become essential to understanding the transfer and dissipation of energy.",
+        "Our research examines the connection between intermittent current structures, phase mixing, Landau damping, and electron heating. Combining theory with kinetic simulations lets us ask how energy moves through both physical and velocity space."
+      ],
+      "projects": [
+        {
+          "slug": "electron-heating",
+          "title": "Electron Heating via Phase-space Dynamics",
+          "stage": "Published work",
+          "question": "How does turbulent energy become electron heat?",
+          "summary": "",
+          "papers": [
+            5
+          ],
+          "details": "At scales smaller than an ion’s gyroradius, solar-wind turbulence evolves not only through structures in physical space but also through increasingly fine structure in the particles’ velocity distribution. Kinetic Alfvén waves transfer energy into this velocity-space structure through phase mixing and Landau damping, providing an efficient route to electron heating. Plasma echoes could, in principle, reverse this transfer and return energy to the electromagnetic fluctuations. We find, however, that the nonlinear interactions responsible for echoes are locally weakened around spontaneously formed current sheets. Phase mixing and Landau damping can therefore proceed there with less opposition, explaining why electron heating is concentrated near these intermittent structures. This connects the geometry of turbulence in physical space directly to how its energy is converted into heat in velocity space.",
+          "keyword": "Electron heating via phase-space dynamics",
+          "cover": {
+            "image": "electron-heating-phase-space.png",
+            "alt": "Energy-dissipation spectrum in Hermite-mode and perpendicular-wavenumber phase space for run K2a.",
+            "fit": "contain",
+            "position": {
+              "x": 50,
+              "y": 50
+            }
+          }
+        },
+        {
+          "slug": "kinetic-turbulence-spectrum",
+          "title": "Spectrum of Kinetic Turbulence: Intermittency or Tearing Mediation?",
+          "stage": "Published work",
+          "question": "What determines the spectrum of kinetic-Alfvén-wave turbulence?",
+          "summary": "",
+          "papers": [
+            6
+          ],
+          "details": "Measurements of the solar wind show that electromagnetic fluctuations develop a steeper spectrum below the ion gyroradius than a simple kinetic-Alfvén-wave cascade would predict. Two mechanisms could explain this: intermittency, which concentrates the turbulent energy into sparse sheet-like structures, or tearing instability, which could break apart increasingly elongated structures and control the cascade. By comparing simulations with different mechanisms for breaking magnetic flux freezing, we find the same spectrum in every case. The fluctuations also remain approximately isotropic in the plane perpendicular to the background magnetic field, rather than becoming progressively elongated as tearing mediation requires. Higher-order statistics instead reveal quasi-two-dimensional, sheet-like intermittent structures. These results identify intermittency, rather than tearing mediation, as the mechanism that sets the sub-ion spectrum in this regime and help interpret spacecraft measurements of kinetic turbulence in the solar wind.",
+          "keyword": "Spectrum of kinetic turbulence",
+          "cover": {
+            "image": "kinetic-turbulence-spectrum.png",
+            "alt": "Three-dimensional visualization of intermittent magnetic-energy structures in kinetic turbulence.",
+            "fit": "contain",
+            "position": {
+              "x": 50,
+              "y": 50
+            }
+          },
+          "highlight_title": "Intermittency and Tearing Mediation for Kinetic Turbulence"
+        },
+        {
+          "slug": "gyrokinetic-turbulence",
+          "title": "Gyrokinetics in an Inhomogeneous Solar Wind",
+          "stage": "Ongoing research",
+          "question": "",
+          "summary": "We derive a set of nonlinear gyrokinetic equations to describe plasma turbulence in spatially varying backgrounds with general magnetic-field geometry. By averaging over particles’ rapid gyromotion, the equations capture how slower turbulent motions interact with background flows, gradients, and curved magnetic fields.",
+          "papers": [],
+          "details": "This framework lets us study how realistic solar-wind conditions shape turbulence and the transfer of energy to ions and electrons. The present model uses a prescribed, stationary background; predicting how that background evolves in response to turbulence will require coupling these equations to a transport model.",
+          "keyword": "Gyrokinetic equation",
+          "cover": {
+            "image": "gk.png",
+            "alt": "Diagram of particle gyromotion and guiding-center motion along a magnetic field, showing parallel and perpendicular length scales.",
+            "fit": "contain",
+            "position": {
+              "x": 50,
+              "y": 50
+            }
+          },
+          "lead": {
+            "name": "Dr. Vincent David",
+            "url": "/team/vincent-david/",
+            "affiliation": ""
+          },
+          "manuscripts": [
+            {
+              "title": "Gyrokinetics in an Inhomogeneous Solar Wind",
+              "authors": [
+                "Vincent David",
+                "Toby Adkins",
+                "Jonathan Squire",
+                "Evan L. Yerger",
+                "Muni Zhou"
+              ],
+              "status": "In preparation"
+            }
+          ]
+        },
+        {
+          "slug": "imbalanced-turbulence",
+          "title": "Imbalanced solar-wind turbulence",
+          "stage": "Ongoing research",
+          "question": "",
+          "summary": "",
+          "papers": [],
+          "details": "",
+          "keyword": "Imbalanced turbulence",
+          "cover": {
+            "image": "imbalanced-solar-wind-turbulence.png",
+            "alt": "Two-panel figure showing kinetic-turbulence spectral slopes above and the evolution of the characteristic perpendicular wavenumber below.",
+            "fit": "contain",
+            "position": {
+              "x": 50,
+              "y": 50
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "reconnection",
+      "title": "Magnetic Reconnection & Self-organization",
+      "short": "Magnetic Reconnection & Self-organization",
+      "category": "Reconnection in turbulent plasmas",
+      "question": "How do large magnetic structures emerge from small-scale turbulence?",
+      "summary": "Magnetic-island mergers, inverse energy transfer, and electron-only reconnection.",
+      "image": "reconnection-theme.png",
+      "alt": "Four cropped simulation panels showing magnetic structures evolving from an ordered configuration into multiscale turbulence.",
+      "caption": "Current-density evolution and magnetic self-organization · Muni Zhou and collaborators",
+      "tags": [
+        "Magnetic reconnection",
+        "Inverse energy transfer",
+        "Electron-only reconnection"
+      ],
+      "body": [
+        "Magnetic reconnection changes how field lines connect and rapidly converts magnetic energy into particle motion and heat. In a turbulent plasma, many reconnection events can also reorganize the magnetic field collectively and build structures much larger than the original fluctuations.",
+        "We study magnetic-island and flux-tube mergers, turbulent decay, and kinetic reconnection. Our research asks when reconnection drives inverse magnetic-energy transfer, how collisionless effects modify that process, and how multiscale magnetic structures self-organize over time."
+      ],
+      "projects": [
+        {
+          "slug": "island-and-flux-tube-mergers",
+          "title": "Inverse Cascade via Magnetic Reconnection",
+          "stage": "Published & ongoing work",
+          "question": "How does magnetic reconnection drive an inverse cascade?",
+          "summary": "",
+          "papers": [
+            13,
+            12,
+            15
+          ],
+          "details": "Magnetic turbulence usually carries energy from large scales to small ones, yet a decaying magnetized plasma can also transfer magnetic energy in the opposite direction. This project shows how reconnection enables that inverse cascade: magnetic islands and flux tubes repeatedly merge, leaving behind fewer, larger structures as the total magnetic energy decays. A hierarchical merger model connects the reconnection timescale to the growth of the magnetic correlation length, while simulations show that this mechanism operates in both two and three dimensions even when the magnetic field has no net helicity.",
+          "keyword": "Inverse cascade via magnetic reconnection",
+          "cover": {
+            "image": "inverse-cascade-transfer.png",
+            "alt": "Scale-to-scale magnetic-energy transfer map showing inverse transfer during magnetic-structure mergers.",
+            "fit": "contain",
+            "position": {
+              "x": 50,
+              "y": 50
+            }
+          }
+        },
+        {
+          "slug": "multiscale-flux-tubes",
+          "title": "Multi-scale Dynamics of Magnetic Flux Tubes",
+          "stage": "Published work",
+          "question": "How do interacting magnetic flux tubes transfer energy across scales?",
+          "summary": "",
+          "papers": [
+            11
+          ],
+          "details": "A turbulent plasma can contain a broad population of magnetic islands rather than a single characteristic structure. This project develops a statistical model that follows how islands of different sizes and magnetic fluxes are created, lost, and combined through reconnection. By connecting many individual coalescence events to the evolving distribution of the whole population, the model explains how progressively larger magnetic structures emerge and provides a multiscale description of inverse magnetic-energy transfer.",
+          "keyword": "Multi-scale flux-tube dynamics",
+          "cover": {
+            "image": "multiscale-flux-tubes.png",
+            "alt": "Equation governing magnetic-flux-tube distribution dynamics above the evolving flux distribution.",
+            "fit": "contain",
+            "position": {
+              "x": 50,
+              "y": 50
+            }
+          },
+          "highlight_title": "Multi-scale flux-tube dynamics"
+        },
+        {
+          "slug": "electron-only-published",
+          "title": "Inverse Cascade at Sub-Ion Scales through Electron-Only Reconnection",
+          "highlight_title": "Electron-only reconnection-driven inverse cascade",
+          "stage": "Published work",
+          "question": "How does electron-scale reconnection affect magnetic-energy transfer?",
+          "summary": "",
+          "papers": [
+            2
+          ],
+          "details": "Below the characteristic ion scale, electrons can reconnect and form fast outflows while the heavier ions remain largely decoupled. This project shows that repeated electron-only mergers can still move magnetic energy toward progressively larger scales. Theory and fully kinetic simulations reveal distinct scaling laws for the magnetic energy and structure size in the electron-only regime, and follow their transition toward ion-coupled reconnection as the growing structures approach ion scales.",
+          "keyword": "Electron-only reconnection",
+          "cover": {
+            "image": "electron-only-reconnection-evolution.png",
+            "alt": "Log-log evolution of magnetic energy and characteristic scale across electron-only and ion-coupled reconnection regimes.",
+            "fit": "contain",
+            "position": {
+              "x": 50,
+              "y": 50
+            }
+          }
+        },
+        {
+          "slug": "electron-only-current",
+          "title": "Electron–Ion Reconnection and Rate in Finite-Beta Plasma",
+          "stage": "Ongoing research",
+          "question": "How does finite plasma beta control the rate of electron-only reconnection in an electron–ion plasma?",
+          "summary": "",
+          "papers": [],
+          "details": "Electron-only reconnection occurs when electrons reconnect and form fast outflows before the heavier ions can fully respond, a regime relevant to the short current sheets found in plasma turbulence. This project asks how plasma pressure, measured by beta, controls the global reconnection rate. By extending island-coalescence theory to finite beta and testing it with fully kinetic particle-in-cell simulations, we find that the merger rate increases with beta and decreases with island size, yielding a scaling that connects the large-scale supply of magnetic flux to the electron-scale reconnection layer.",
+          "keyword": "Finite-beta reconnection rate",
+          "highlight_title": "Finite-beta reconnection rate",
+          "cover": {
+            "image": "finite-beta-electron-ion-reconnection.png",
+            "alt": "Current density and magnetic-field structure for two merging islands in a finite-beta electron-ion plasma.",
+            "fit": "contain",
+            "position": {
+              "x": 50,
+              "y": 50
+            }
+          },
+          "manuscripts": [
+            {
+              "title": "Finite-Beta Scaling of Electron-Only Magnetic Reconnection",
+              "authors": [
+                "Zhuo Liu",
+                "Dion Li",
+                "Muni Zhou"
+              ],
+              "status": "In preparation"
+            }
+          ]
+        },
+        {
+          "slug": "reconnection-in-kinetic-turbulence",
+          "title": "Extended Reconnection in Kinetic Turbulence",
+          "stage": "Published work",
+          "question": "Do extended reconnection events embedded in turbulence follow the dynamics of the turbulence itself?",
+          "summary": "",
+          "papers": [
+            8
+          ],
+          "details": "Magnetic reconnection and turbulence continually reshape one another, but it is not obvious whether an extended reconnection event embedded in turbulence follows the dynamics of the turbulence itself. Using a magnetic-flux-transport method to identify and measure active X-lines in a fully kinetic turbulent plasma, this project finds that it does: the extended reconnection structures grow and spread with a geometry consistent with critical balance (Goldreich–Sridhar 1995). The result directly connects the scale of an extended X-line to the multiscale organization of its turbulent environment.",
+          "keyword": "Extended reconnection in turbulence",
+          "lead": {
+            "name": "Dr. Tak Chu Li",
+            "url": "",
+            "affiliation": "",
+            "prefix": "collaborator, "
+          },
+          "cover": {
+            "image": "extended-reconnection-kinetic-turbulence.png",
+            "alt": "Three-dimensional flux-transport visualization showing extended reconnection X-lines in kinetic plasma turbulence.",
+            "fit": "contain",
+            "position": {
+              "x": 50,
+              "y": 50
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "fusion",
+      "title": "Plasma Physics for Controlled Fusion",
+      "short": "Plasma Physics for Controlled Fusion",
+      "category": "Transport, waves & confinement",
+      "question": "How can we understand and control energetic-particle transport?",
+      "summary": "Wave–particle interactions, current drive, mirror plasmas, and energetic-particle transport.",
+      "overview_image": "fusion-research-overview.png",
+      "image": null,
+      "tags": [
+        "Energetic particles",
+        "Alfvén waves",
+        "Magnetic confinement"
+      ],
+      "body": [
+        "Controlled fusion requires plasmas to remain hot, confined, and stable while currents, waves, energetic particles, and exhaust flows interact across scales. Predicting these interactions is essential for maintaining confinement and designing practical ways to heat and control the plasma.",
+        "We study Alfvén-mode saturation, wave-driven current, energetic-particle transport, and plasma exhaust in magnetic mirrors. By combining analytical theory with numerical models, we seek ways to predict plasma behavior and guide the operation of fusion experiments."
+      ],
+      "projects": [
+        {
+          "slug": "alfven-mode-saturation",
+          "title": "Dependence of Alfvén Mode Saturation on Collisionality",
+          "highlight_title": "TAE Saturation",
+          "stage": "Published work",
+          "question": "How do collisions affect the nonlinear saturation of Alfvén modes?",
+          "summary": "",
+          "papers": [
+            17
+          ],
+          "details": [
+            "Toroidal Alfvén eigenmodes (TAEs) can redistribute the energetic particles that heat a fusion plasma. If these modes grow too large, energetic particles can be moved away from where their energy is most useful—or even be lost—reducing plasma heating and making high-performance confinement more difficult. Predicting the amplitude at which a TAE stops growing is therefore essential for understanding energetic-particle transport and anticipating the performance of future fusion devices.",
+            "TAEs grow by resonantly exchanging energy with a particular group of energetic particles. As the mode grows, it mixes particles within this resonance layer and flattens the part of the particle distribution that drives the instability, pushing the mode toward saturation. Collisions compete with that process by scattering nearby particles into the resonance layer and replenishing the drive. Collisionality therefore controls how quickly the resonance can be refilled and, in turn, how large the mode becomes before it saturates.",
+            "We developed a simple way to determine this dependence without running a new, large nonlinear simulation for every collision rate. By balancing the time required for the mode to mix particles inside the resonance with the time required for collisions to diffuse nearby particles across the resonance width, we can predict the saturation amplitude and its scaling with collisionality. The method captures the simulation results as long as the mode remains below the amplitude at which stochastic particle loss becomes important."
+          ],
+          "keyword": "TAE Saturation",
+          "cover": {
+            "image": "alfven-mode-saturation-phase-space.png",
+            "alt": "Energetic-particle phase-space structure showing trapped and passing particle regions associated with Alfvén-mode dynamics.",
+            "fit": "contain",
+            "position": {
+              "x": 50,
+              "y": 50
+            }
+          }
+        },
+        {
+          "slug": "wave-driven-current",
+          "title": "Helicon Current Drive",
+          "stage": "Published work",
+          "question": "How do helicon and lower-hybrid current drive compare?",
+          "summary": "",
+          "papers": [
+            7
+          ],
+          "details": [
+            "A tokamak relies on a strong current flowing through the plasma to help create the twisted magnetic field that confines it. In present experiments, much of this current can be induced by a central transformer, but transformer drive is inherently pulsed. A practical fusion power plant will need efficient non-inductive current drive to sustain long or steady-state operation, shape the current profile, and maintain the magnetic configuration needed for stable, well-confined plasma.",
+            "Helicon waves offer a promising way to provide that current in the hot, dense plasmas expected in future reactors. These radio-frequency waves can transfer momentum preferentially to electrons moving in one direction, creating a net parallel current. They are especially attractive because they may penetrate and deposit power in reactor-relevant conditions where some established current-drive techniques become less effective. Determining how efficiently helicon waves convert injected radio-frequency power into plasma current is therefore central to judging whether they can become a practical tool for fusion devices.",
+            "We developed a theoretical calculation of the parallel current driven by helicon waves in realistic tokamak geometry, together with the radio-frequency power absorbed by passing electrons. The calculation retains the correlated interactions experienced by electrons as they make repeated poloidal transits through the applied wave field, and uses an adjoint method to evaluate the resulting current-drive efficiency. Comparing the result with lower-hybrid current drive, we found that the two schemes have the same efficiency in the single-frequency, single-mode-number limit. This places helicon current drive on a firm theoretical footing as a plausible and potentially useful option for sustaining current in future tokamaks."
+          ],
+          "keyword": "Helicon Current Drive",
+          "cover": {
+            "image": "diii-d-helicon-antenna.jpg",
+            "alt": "Helicon traveling-wave antenna installed inside the DIII-D tokamak.",
+            "caption": "DIII-D helicon antenna · Courtesy General Atomics",
+            "caption_url": "https://www.ga.com/diii-d-scientists-at-ga-develop-new-system-to-improve-production-of-fusion-energy",
+            "credit_short": "Photo courtesy of General Atomics",
+            "fit": "contain",
+            "position": {
+              "x": 50,
+              "y": 50
+            }
+          }
+        },
+        {
+          "slug": "mirror-plasma-exhaust",
+          "title": "Plasma Exhaust in Magnetic Mirrors",
+          "stage": "Ongoing research",
+          "question": "Can voltages applied at the ends of a magnetic mirror control the confined plasma?",
+          "summary": "Magnetic mirrors confine fusion plasmas along open magnetic-field lines, allowing particles and heat to escape into an exhaust region. We develop a two-dimensional fluid model of plasma and neutral gas in a WHAM-based geometry, extending from the midplane through the magnetic throat to a biased target plate. A JAX-based solver directly finds steady-state density, temperature, flow, and electric-potential profiles using a Newton-like method, rather than waiting for time-dependent simulations to settle.",
+          "papers": [],
+          "presentations": [
+            {
+              "title": "Fusion Exhaust Simulations for Axisymmetric Mirrors",
+              "authors": [
+                "Joseph Kuester",
+                "Ben Zhu",
+                "Yichen Fu",
+                "Muni Zhou",
+                "Sam Frank"
+              ],
+              "venue": "Poster presentation at APS DPP 2026"
+            }
+          ],
+          "details": "Across the conditions tested, the target voltage reaches the midplane with little change. This suggests that end biasing could control plasma rotation and help suppress interchange instabilities, although stability itself is not calculated here. Neutral recycling also has a strong effect: charge exchange transfers momentum from ions to neutrals, slowing the exhaust from supersonic to subsonic speeds under strong recycling. The plasma becomes cooler and denser, making parts of the exhaust collisional. These results connect electrical control of the confined plasma to exhaust conditions and identify where a kinetic description is needed.",
+          "keyword": "Mirror exhaust",
+          "cover": {
+            "image": "GDPT.png",
+            "alt": "Magnetic-mirror geometry showing field lines, particle and heat source, mirror coil, and end-bias voltage.",
+            "fit": "contain",
+            "position": {
+              "x": 50,
+              "y": 50
+            }
+          },
+          "lead": {
+            "name": "Joseph Kuester",
+            "url": "/team/joseph-kuester/",
+            "affiliation": ""
+          }
+        }
+      ],
+      "overview_visual": {
+        "image": "fusion-magnetic-particles.png",
+        "alt": "Contours of particle motion and magnetic structure in a fusion plasma"
+      }
+    }
+  ],
+  "homepage": {
+    "profile_links": [
+      {
+        "label": "CV",
+        "url": "/team/muni-zhou/"
+      },
+      {
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?hl=en&oi=ao&user=swzwbYMAAAAJ"
+      },
+      {
+        "label": "ORCID",
+        "url": "https://orcid.org/0000-0003-0709-7848"
+      },
+      {
+        "label": "Dartmouth profile",
+        "url": "https://physics.dartmouth.edu/people/muni-zhou"
+      }
+    ],
+    "highlights": [
+      {
+        "area": "magnetogenesis",
+        "project": "shear-driven-weibel",
+        "art": "flow"
+      },
+      {
+        "area": "magnetogenesis",
+        "project": "electron-ion-weibel-seeding",
+        "art": "density"
+      },
+      {
+        "area": "magnetogenesis",
+        "project": "mirror-firehose-weibel-relaxation",
+        "art": "density"
+      },
+      {
+        "area": "magnetogenesis",
+        "project": "kinetic-constraints-weibel-relaxation",
+        "art": "flow"
+      },
+      {
+        "area": "dynamo-and-magnetic-field-relaxation",
+        "project": "pair-plasma-dynamo",
+        "art": "flow"
+      },
+      {
+        "area": "dynamo-and-magnetic-field-relaxation",
+        "project": "magnetic-field-relaxation",
+        "art": "flow"
+      },
+      {
+        "area": "radiative-turbulence",
+        "project": "radiative-kinetic-turbulence",
+        "art": "current-sheets"
+      },
+      {
+        "area": "radiative-turbulence",
+        "project": "radiative-pair-production",
+        "art": "vortex"
+      },
+      {
+        "area": "kinetic-turbulence",
+        "project": "electron-heating",
+        "art": "density"
+      },
+      {
+        "area": "kinetic-turbulence",
+        "project": "kinetic-turbulence-spectrum",
+        "art": "flow"
+      },
+      {
+        "area": "kinetic-turbulence",
+        "project": "gyrokinetic-turbulence",
+        "art": "vortex-pair"
+      },
+      {
+        "area": "reconnection",
+        "project": "island-and-flux-tube-mergers",
+        "art": "density"
+      },
+      {
+        "area": "reconnection",
+        "project": "multiscale-flux-tubes",
+        "art": "density"
+      },
+      {
+        "area": "reconnection",
+        "project": "electron-only-published",
+        "art": "density"
+      },
+      {
+        "area": "reconnection",
+        "project": "electron-only-current",
+        "art": "density"
+      },
+      {
+        "area": "reconnection",
+        "project": "reconnection-in-kinetic-turbulence",
+        "art": "density"
+      },
+      {
+        "area": "fusion",
+        "project": "alfven-mode-saturation",
+        "art": "filaments"
+      },
+      {
+        "area": "fusion",
+        "project": "wave-driven-current",
+        "art": "filaments"
+      },
+      {
+        "area": "fusion",
+        "project": "mirror-plasma-exhaust",
+        "art": "filaments"
+      }
+    ],
+    "bio": [
+      "I study plasma physics using analytical theory and numerical simulations, with applications to astrophysical systems and controlled nuclear fusion. My research focuses on multiscale processes, including turbulence, magnetic reconnection, and energetic-particle transport.",
+      "I joined the faculty at Dartmouth College in 2025. I received my Ph.D. from the Massachusetts Institute of Technology (MIT), where I worked with Nuno Loureiro. I was subsequently a postdoctoral fellow at Princeton University and a member of the Institute for Advanced Study (IAS)."
+    ],
+    "intro_role": "Assistant Professor of Physics and Astronomy",
+    "science_title": "What we do",
+    "opportunities": [
+      {
+        "title": "Neukom Postdoctoral Fellowship",
+        "description": "supports interdisciplinary computational research with faculty mentors from two different departments at Dartmouth. Application deadline: December 1, 2026. Please contact Muni to discuss preparing an application.",
+        "url": "https://apply.interfolio.com/189760",
+        "details_url": "https://neukom.dartmouth.edu/funding/faculty/postdoctoral-fellows"
+      }
+    ]
+  },
+  "principal_investigator": {
+    "name": "Muni Zhou",
+    "chinese_name": "周慕霓",
+    "role": "Principal investigator",
+    "position": "Assistant Professor · Dartmouth College",
+    "image": "portrait.jpg",
+    "text": "",
+    "links": [
+      {
+        "label": "Email",
+        "url": "mailto:muni.zhou@dartmouth.edu"
+      },
+      {
+        "label": "CV",
+        "url": "/assets/Muni-Zhou-CV-2026.pdf"
+      },
+      {
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?hl=en&oi=ao&user=swzwbYMAAAAJ"
+      },
+      {
+        "label": "ORCID",
+        "url": "https://orcid.org/0000-0003-0709-7848"
+      }
+    ],
+    "biography": "",
+    "background": [],
+    "email": "muni.zhou@dartmouth.edu",
+    "profile_sections": [
+      {
+        "title": "Appointments",
+        "items": [
+          "Assistant Professor · Dartmouth College · 2025-present",
+          "Member, School of Natural Science · Institute for Advanced Study · 2022-2024",
+          "Princeton Presidential Postdoctoral Research Fellow · Princeton University · 2022-2023"
+        ]
+      },
+      {
+        "title": "Education",
+        "items": [
+          "Ph.D. in Plasma Physics · Massachusetts Institute of Technology · 2016-2022",
+          "B.Sc. in Physics (Honors) · Zhejiang University · 2012-2016"
+        ]
+      },
+      {
+        "title": "Selected Research Support",
+        "items": [
+          "NSF Collaborative Research: Decay and Diffusion of Dynamo-Generated Magnetic Fields in Astrophysical Plasmas · PI · 2025-2028",
+          "INCITE: Extreme Plasmas at the Spacetime Frontier · Co-PI · 2026-2029",
+          "NSF ACCESS: Generation and Relaxation of Cosmic Magnetic Fields in a Turbulent Collisionless Plasma · PI · 2024-2025"
+        ]
+      },
+      {
+        "title": "Selected Honors & Awards",
+        "items": [
+          "Walter and Constance Burke Research Initiation Award · 2025",
+          "Princeton Presidential Postdoctoral Research Fellowship · 2022-2023",
+          "Future Investigators in NASA Earth and Space Science and Technology (FINESST) · 2020-2022",
+          "Outstanding Teaching Assistant Award, MIT Department of Nuclear Science and Engineering · 2019",
+          "Outstanding Bachelor's Thesis Award, Zhejiang University · 2016"
+        ]
+      },
+      {
+        "title": "Selected Professional Service",
+        "items": [
+          "Vice Chair, APS-DPP Topical Group in Plasma Astrophysics · 2025-2026",
+          "Program Committee, AAPPS Division of Plasma Physics · 2026",
+          "Program Committee, APS Division of Plasma Physics · 2025",
+          "Co-organizer, PCTS Workshop on Particle Transport in Magnetized Turbulence · 2024",
+          "Co-organizer, PCTS/PGI Workshop on Improving Black Hole Accretion Models with Plasma Theory · 2023"
+        ]
+      },
+      {
+        "title": "Selected Invited Talks",
+        "items": [
+          "Magnetic Reconnection Workshop · Kagoshima, Japan · 2026",
+          "NSF ECLIPSE Meeting · Michigan · 2026",
+          "Invited One-Week Lectureship, Theoretical Astrophysics Program · University of Arizona · 2026",
+          "American Geophysical Union Fall Meeting · New Orleans · 2025",
+          "AAPPS Division of Plasma Physics Annual Meeting · Fukuoka, Japan · 2025",
+          "APS Division of Plasma Physics Annual Meeting · 2024"
+        ]
+      }
+    ]
+  },
+  "backgrounds": {
+    "flow": {
+      "image": "background-flow-selected.png",
+      "source_width": 670,
+      "source_height": 670,
+      "crop": [
+        10,
+        10,
+        650
+      ],
+      "description": "User-selected simulation image; inset CSS crop excludes edge marks and preserves original pixels."
+    },
+    "vortex-pair": {
+      "image": "background-vortex-pair-selected.png",
+      "source_width": 832,
+      "source_height": 838,
+      "crop": [
+        10,
+        10,
+        812
+      ],
+      "description": "User-selected simulation image; inset CSS crop excludes edge marks and preserves original pixels."
+    },
+    "filaments": {
+      "image": "background-filaments-selected.png",
+      "source_width": 748,
+      "source_height": 740,
+      "crop": [
+        10,
+        10,
+        720
+      ],
+      "description": "User-selected simulation image; inset CSS crop excludes edge marks and preserves original pixels."
+    },
+    "vortex": {
+      "image": "background-vortex-selected.png",
+      "source_width": 770,
+      "source_height": 774,
+      "crop": [
+        10,
+        10,
+        750
+      ],
+      "description": "User-selected simulation image; inset CSS crop excludes edge marks and preserves original pixels."
+    },
+    "current-sheets": {
+      "image": "background-current-sheets-selected.png",
+      "source_width": 840,
+      "source_height": 830,
+      "crop": [
+        10,
+        10,
+        810
+      ],
+      "description": "User-selected simulation image; inset CSS crop excludes edge marks and preserves original pixels."
+    },
+    "density": {
+      "image": "background-density-selected.png",
+      "source_width": 590,
+      "source_height": 590,
+      "crop": [
+        10,
+        10,
+        570
+      ],
+      "description": "User-selected simulation image; inset CSS crop excludes edge marks and preserves original pixels."
+    }
+  },
+  "page_backgrounds": {
+    "Research": "vortex-pair",
+    "Publications": "filaments",
+    "Teaching": "vortex",
+    "People": "current-sheets"
+  },
+  "topic_backgrounds": {
+    "magnetogenesis": "flow",
+    "radiative-turbulence": "vortex",
+    "kinetic-turbulence": "vortex-pair",
+    "reconnection": "density",
+    "fusion": "filaments"
+  }
+}

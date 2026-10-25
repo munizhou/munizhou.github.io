@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Local editing history and temporary working files
+local-backups/
+tmp/
+output/
+
+# Generated pages are rebuilt by GitHub Actions. Keep dist/assets because it
+# contains the site's source media and shared CSS/JavaScript.
+dist/**/*.html
+dist/assets/preview-version.json
+

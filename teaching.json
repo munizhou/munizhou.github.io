@@ -1,0 +1,117 @@
+{
+  "courses": [
+    {
+      "code": "PHYS 122",
+      "title": "Advanced Plasma Physics ",
+      "terms": "",
+      "level": "Graduate",
+      "description": "",
+      "source": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-graduate/physics-and-astronomy/phys-physics/100/phys-122",
+      "topics": [
+        {
+          "title": "Hydrodynamic and MHD Turbulence",
+          "url": "/assets/notes/phys122/HD_and_MHD_Turbulence_Notes.pdf"
+        },
+        {
+          "title": "Magnetic Reconnection",
+          "url": "/assets/notes/phys122/Reconnection_Notes.pdf"
+        },
+        {
+          "title": "Magnetogenesis and Small-Scale Dynamo",
+          "url": "/assets/notes/phys122/Magnetogenesis_and_Small_Scale_Dynamo_Notes.pdf"
+        },
+        {
+          "title": "Mean-Field Dynamo and Magnetorotational Instability",
+          "url": "/assets/notes/phys122/Mean_Field_Dynamo_MRI_Notes.pdf"
+        },
+        {
+          "title": "CGL and Pressure Anisotropy",
+          "url": "/assets/notes/phys122/CGL_Pressure_Anisotropy_Notes.pdf"
+        },
+        {
+          "title": "Drift Kinetics and Quasilinear Theory",
+          "url": "/assets/notes/phys122/Drift_Kinetics_and_Quasilinear_Theory_Notes.pdf"
+        },
+        {
+          "title": "Fokker–Planck and Particle Transport",
+          "url": "/assets/notes/phys122/Fokker_Planck_and_Particle_Transport_Notes.pdf"
+        },
+        {
+          "title": "Kinetic Turbulence, Heating and Acceleration",
+          "url": "/assets/notes/phys122/Kinetic_Turbulence_Heating_and_Acceleration_Notes.pdf"
+        },
+        {
+          "title": "Shocks and Particle Acceleration",
+          "url": "/assets/notes/phys122/Shocks_and_Particle_Acceleration_Notes.pdf"
+        }
+      ]
+    },
+    {
+      "code": "PHYS 68",
+      "title": "Introductory Plasma Physics ",
+      "terms": "",
+      "level": "Graduate/Undergrad",
+      "description": "",
+      "source": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-graduate/physics-and-astronomy/phys-physics/100/phys-122"
+    },
+    {
+      "code": "PHYS 14 / PHYS 16",
+      "title": "Electricity and Magnetism",
+      "terms": "",
+      "level": "Undergrad",
+      "description": "",
+      "source": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-graduate/physics-and-astronomy/phys-physics/100/phys-122",
+      "code_note": "Honors"
+    }
+  ],
+  "other": [
+    {
+      "year": "2026",
+      "title": "NSF/GPAP SUMMER school",
+      "context": "on plasma physics for astrophysicists",
+      "role": ""
+    },
+    {
+      "year": "2026",
+      "title": "PPPL Introduction to Plasma and Fusion Course",
+      "context": "",
+      "role": "Lectures on Magnetic Reconnection and Intro to Kinetic Plasma Physics "
+    },
+    {
+      "year": "2025",
+      "title": "Caltech Relativistic Astrophysics Summer School ",
+      "context": "",
+      "role": "Lectures on Turbulence and Dynamo"
+    },
+    {
+      "year": "2024",
+      "title": "PPPL Introduction to Plasma and Fusion Course",
+      "context": "",
+      "role": "Lectures on Magnetic Reconnection "
+    },
+    {
+      "year": "2023",
+      "title": "NSF/GPAP SUMMER school",
+      "context": "",
+      "role": "Lectures on Introduction to Plasma and MHD Waves"
+    }
+  ],
+  "provenance": "Past teaching from Muni Zhou’s public CV and prior confirmed course discussions. Fall 2026 course numbers from the latest teaching correspondence in prior context. PHYS 122 uses the official catalog title until the term-specific topic is supplied. No syllabus links or course materials have been invented.",
+  "outreach": [
+    {
+      "title": "Dartmouth Science Day",
+      "description": "We share hands-on science demonstrations from Dartmouth’s Department of Physics and Astronomy. Visitors can make their hair stand on end with a Van de Graaff generator, watch a superconducting train levitate and race around a track, and see a real plasma glow at their fingertips! Stop by!",
+      "url": "https://academic-outreach.dartmouth.edu/programs/science-day",
+      "images": [
+        {
+          "image": "science-day-superconducting-train.jpg",
+          "alt": "Preparing a superconducting train demonstration at Dartmouth Science Day"
+        },
+        {
+          "image": "science-day-physics-demos.jpg",
+          "alt": "Physics demonstration equipment arranged for Dartmouth Science Day"
+        }
+      ]
+    }
+  ]
+}
