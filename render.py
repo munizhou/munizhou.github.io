@@ -1,6 +1,7 @@
 """Generate the static research-group website from editable content records."""
 from pathlib import Path
 from html import escape
+from xml.sax.saxutils import escape as xml_escape
 import json
 import re
 import hashlib
@@ -8,6 +9,7 @@ from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'dist'
+SITE_URL = 'https://munizhou.github.io'
 data = json.loads((ROOT / 'content.json').read_text())
 paper_records = json.loads((ROOT / 'publications-source.json').read_text())
 # Keep the established published-paper indices stable for project references.
@@ -23,6 +25,63 @@ preview_inputs += [path.read_bytes() for path in (ROOT/'render.py', OUT/'assets/
 PREVIEW_VERSION = hashlib.sha256(b'\0'.join(preview_inputs)).hexdigest()[:24]
 SCHOLAR = 'https://scholar.google.com/citations?hl=en&oi=ao&user=swzwbYMAAAAJ'
 e = escape
+
+PERSON_ID = f'{SITE_URL}/#muni-zhou'
+WEBSITE_ID = f'{SITE_URL}/#website'
+
+def canonical_url(path):
+    return f'{SITE_URL}/{path.strip("/")}/' if path.strip('/') else f'{SITE_URL}/'
+
+def structured_data(path):
+    if path not in ('', 'team/muni-zhou'):
+        return ''
+    person = {
+        '@type': 'Person',
+        '@id': PERSON_ID,
+        'name': 'Muni Zhou',
+        'alternateName': ['周慕霓', '慕尼周'],
+        'url': f'{SITE_URL}/',
+        'image': f'{SITE_URL}/assets/portrait.jpg',
+        'jobTitle': 'Assistant Professor of Physics and Astronomy',
+        'affiliation': {
+            '@type': 'CollegeOrUniversity',
+            'name': 'Dartmouth College',
+            'url': 'https://home.dartmouth.edu/'
+        },
+        'sameAs': [
+            SCHOLAR,
+            'https://orcid.org/0000-0003-0709-7848',
+            'https://physics.dartmouth.edu/people/muni-zhou'
+        ]
+    }
+    graph = [person]
+    if path == '':
+        graph.insert(0, {
+            '@type': 'WebSite',
+            '@id': WEBSITE_ID,
+            'url': f'{SITE_URL}/',
+            'name': 'TAPAS Group',
+            'alternateName': ['TAPAS', 'Muni Zhou Research Group'],
+            'publisher': {'@id': PERSON_ID}
+        })
+        graph.insert(0, {
+            '@type': 'ProfilePage',
+            '@id': f'{SITE_URL}/#profile-page',
+            'url': f'{SITE_URL}/',
+            'name': 'Muni Zhou | TAPAS Group',
+            'mainEntity': {'@id': PERSON_ID},
+            'isPartOf': {'@id': WEBSITE_ID}
+        })
+    else:
+        graph.insert(0, {
+            '@type': 'ProfilePage',
+            '@id': f'{canonical_url(path)}#profile-page',
+            'url': canonical_url(path),
+            'name': 'Muni Zhou',
+            'mainEntity': {'@id': PERSON_ID}
+        })
+    payload = json.dumps({'@context': 'https://schema.org', '@graph': graph}, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
+    return f'<script type="application/ld+json">{payload}</script>'
 
 def link(url, text, css='text-link'):
     return f'<a class="{css}" href="{e(url, quote=True)}">{text}<span aria-hidden="true">↗</span></a>'
@@ -48,9 +107,11 @@ def page(path, title, active, body, description):
         theme_items = ''.join(f'<a href="/research/{e(area["slug"],quote=True)}/"'+(' aria-current="page"' if path == 'research/'+area['slug'] else '')+f'>{e(area.get("short") or area["title"])}</a>' for area in areas)
         overview_current = ' aria-current="page"' if path == 'research' else ''
         sidebar = f'<aside class="research-sidebar"><nav aria-label="Research themes"><h2><a class="research-sidebar-home" href="{RESEARCH_HOME}"{overview_current}>Research themes</a></h2>{theme_items}</nav></aside>'
+    canonical = canonical_url(path)
+    schema = structured_data(path)
     dest.write_text(f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{e(title)} · TAPAS Group</title><meta name="description" content="{e(description, quote=True)}"><meta name="theme-color" content="#006448"><meta name="tapas-preview-revision" content="{PREVIEW_VERSION}"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/site.css?v={PREVIEW_VERSION}"><script src="/assets/site.js?v={PREVIEW_VERSION}" defer></script></head>
+<title>{e(title)} · TAPAS Group</title><meta name="description" content="{e(description, quote=True)}"><link rel="canonical" href="{e(canonical, quote=True)}"><meta name="theme-color" content="#006448"><meta name="tapas-preview-revision" content="{PREVIEW_VERSION}"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/site.css?v={PREVIEW_VERSION}"><script src="/assets/site.js?v={PREVIEW_VERSION}" defer></script>{schema}</head>
 <body>{nav(active)}<div class="wrap site-layout{' research-shell' if sidebar else ''}">{sidebar}<main id="main" class="site-content">{body}</main></div></body></html>''')
 
 def pub(index, show_year=True):
@@ -146,7 +207,7 @@ home_bio_html = ''.join(f'<p class="home-bio">{e(paragraph)}</p>' for paragraph 
 
 home = f''' 
 <section class="home-masthead">{background_art("density")}<div class="wrap home-masthead-grid"><h1 class="home-group-name">TAPAS</h1><p class="home-group-meaning">Turbulence And Plasmas<br><em>Across Scales</em></p></div></section>
-<section class="home-intro"><div class="wrap home-intro-grid"><img class="home-portrait" src="/assets/portrait.jpg" alt="Muni Zhou" loading="lazy"><div><h2>Muni Zhou <span class="chinese">周慕霓</span></h2><p class="home-role">{e(data["homepage"]["intro_role"])}</p>{home_bio_html}<div class="actions home-profile-links">{profile_links}</div></div></div></section>
+<section class="home-intro"><div class="wrap home-intro-grid"><img class="home-portrait" src="/assets/portrait.jpg" alt="Muni Zhou" loading="lazy"><div><h2 class="home-name">Muni Zhou<span class="home-chinese-name">周慕霓</span></h2><p class="home-role">{e(data["homepage"]["intro_role"])}</p>{home_bio_html}<div class="actions home-profile-links">{profile_links}</div></div></div></section>
 <section class="home-research">{background_art("flow")}<div class="wrap"><div class="home-science-intro"><h2>{e(data["homepage"]["science_title"])}</h2><p class="home-research-description">Using theory and numerical simulations, we study how plasmas generate magnetic fields and transfer energy across scales. We ask how <a href="/research/magnetogenesis/">cosmic magnetic fields originate and grow</a>, how <a href="/research/kinetic-turbulence/">turbulence heats the solar wind</a>, and how <a href="/research/reconnection/">magnetic reconnection reshapes turbulent plasmas</a>. We also explore how <a href="/research/radiative-turbulence/">radiation interacts with relativistic turbulence</a> and what controls <a href="/research/fusion/">energetic-particle transport in fusion plasmas</a>.</p><div class="actions"><a class="text-link" href="/research/">Explore our research <span aria-hidden="true">↗</span></a><a class="text-link" href="/team/">Meet our team <span aria-hidden="true">→</span></a></div></div></div></section>
 <section class="section home-highlights" id="research-highlights"><div class="wrap"><div class="section-head"><h2>Research highlights</h2><a class="text-link" href="/research/">All research <span aria-hidden="true">↗</span></a></div><div class="highlights-grid">{highlights}</div></div></section>
 <section class="section band home-join" id="join-us"><div class="wrap"><h2>Interested in joining us?</h2><p>We welcome prospective graduate students and postdoctoral researchers interested in plasma astrophysics, fusion, and basic plasma physics. Contact Muni Zhou: <a class="text-link" href="mailto:muni.zhou@dartmouth.edu">muni.zhou@dartmouth.edu</a></p>{opportunities}{international_opportunities}</div></section>
@@ -366,7 +427,22 @@ outreach_section=f'<section class="teaching-section"><div class="section-head"><
 teaching=f'<div class="wrap teaching-content"><section class="teaching-section"><div class="section-head"><h2>Dartmouth College Courses</h2></div>{courses}</section><section class="teaching-section other-teaching-section"><div class="section-head"><h2>Summer School Teaching</h2></div><div class="other-teaching-grid">{other}</div></section>{outreach_section}</div>'
 page('teaching','Teaching','Teaching',teaching,'Courses and lectures taught by Muni Zhou at Dartmouth College, PPPL, Swarthmore College, and MIT.')
 
-(OUT/'404.html').write_text('''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found · TAPAS Group</title><link rel="stylesheet" href="/assets/site.css"></head><body>'''+nav('')+'<main id="main" class="wrap section"><div class="eyebrow">404</div><h1>Page not found.</h1><p>The page may have moved. Explore our research or return to the home page.</p><div class="actions"><a class="button" href="/">Home</a><a class="text-link" href="/research/">Research ↗</a></div></main>'+'<script src="/assets/site.js" defer></script></body></html>')
+(OUT/'404.html').write_text('''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found · TAPAS Group</title><meta name="robots" content="noindex"><link rel="stylesheet" href="/assets/site.css"></head><body>'''+nav('')+'<main id="main" class="wrap section"><div class="eyebrow">404</div><h1>Page not found.</h1><p>The page may have moved. Explore our research or return to the home page.</p><div class="actions"><a class="button" href="/">Home</a><a class="text-link" href="/research/">Research ↗</a></div></main>'+'<script src="/assets/site.js" defer></script></body></html>')
+
+# Publish a simple inventory of canonical pages for search engines. Redirect-only
+# routes are intentionally omitted so that their destination remains authoritative.
+redirect_routes = {'collaborations', 'research/particle-transport'}
+sitemap_urls = []
+for index_file in sorted(OUT.rglob('index.html')):
+    relative = index_file.parent.relative_to(OUT).as_posix()
+    if relative == '.':
+        relative = ''
+    if relative in redirect_routes:
+        continue
+    sitemap_urls.append(canonical_url(relative))
+sitemap_entries = ''.join(f'<url><loc>{xml_escape(url)}</loc></url>' for url in sitemap_urls)
+(OUT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+sitemap_entries+'</urlset>\n')
+(OUT/'robots.txt').write_text(f'User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n')
 # Publish the revision last, so previews never refresh into an unfinished build.
 revision_file = OUT/'assets/preview-version.json'
 pending_revision = revision_file.with_name('.preview-version.tmp')
