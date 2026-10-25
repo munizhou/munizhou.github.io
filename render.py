@@ -10,6 +10,7 @@ from urllib.parse import quote
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'dist'
 SITE_URL = 'https://munizhou.github.io'
+GOOGLE_SITE_VERIFICATION = '8P4gv_inQOuskHDlATPAPG7NQb6YltpEl_r385vrDVw'
 data = json.loads((ROOT / 'content.json').read_text())
 paper_records = json.loads((ROOT / 'publications-source.json').read_text())
 # Keep the established published-paper indices stable for project references.
@@ -111,7 +112,7 @@ def page(path, title, active, body, description):
     schema = structured_data(path)
     dest.write_text(f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{e(title)} · TAPAS Group</title><meta name="description" content="{e(description, quote=True)}"><link rel="canonical" href="{e(canonical, quote=True)}"><meta name="theme-color" content="#006448"><meta name="tapas-preview-revision" content="{PREVIEW_VERSION}"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/site.css?v={PREVIEW_VERSION}"><script src="/assets/site.js?v={PREVIEW_VERSION}" defer></script>{schema}</head>
+<title>{e(title)} · TAPAS Group</title><meta name="description" content="{e(description, quote=True)}"><link rel="canonical" href="{e(canonical, quote=True)}"><meta name="google-site-verification" content="{GOOGLE_SITE_VERIFICATION}"><meta name="theme-color" content="#006448"><meta name="tapas-preview-revision" content="{PREVIEW_VERSION}"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/site.css?v={PREVIEW_VERSION}"><script src="/assets/site.js?v={PREVIEW_VERSION}" defer></script>{schema}</head>
 <body>{nav(active)}<div class="wrap site-layout{' research-shell' if sidebar else ''}">{sidebar}<main id="main" class="site-content">{body}</main></div></body></html>''')
 
 def pub(index, show_year=True):
