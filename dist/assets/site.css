@@ -576,6 +576,16 @@ body{font-size:16px;line-height:1.55;min-height:100vh;display:flex;flex-directio
 .home-join.band a:hover{color:#004c37}
 .home-join .join-opportunities{border-top-color:#cdded7}
 
+/* Improve homepage readability without enlarging the compact research collection. */
+.home-intro .home-role,.home-intro .home-bio,.home-research-description{font-size:17px;line-height:1.72}
+.home-science-intro h2,.home-join h2{font-size:28px;line-height:1.25}
+.home-profile-links .text-link,.home-research .text-link{font-size:15px}
+.home-join p,.join-opportunities li,.international-opportunities li{font-size:16px;line-height:1.68}
+@media(max-width:600px){
+ .home-intro .home-role,.home-intro .home-bio,.home-research-description,.home-join p,.join-opportunities li,.international-opportunities li{font-size:16px}
+ .home-science-intro h2,.home-join h2{font-size:26px}
+}
+
 .course h3 .course-level{display:inline-block;vertical-align:baseline;margin-left:8px;font-size:12px;line-height:1.4;font-weight:400;letter-spacing:0;color:var(--muted)}
 .course-code-note{font-size:11px;font-weight:400;color:var(--muted);white-space:nowrap}
 .other-teaching-section{padding-bottom:30px}
