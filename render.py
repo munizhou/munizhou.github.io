@@ -110,9 +110,10 @@ def page(path, title, active, body, description):
         sidebar = f'<aside class="research-sidebar"><nav aria-label="Research themes"><h2><a class="research-sidebar-home" href="{RESEARCH_HOME}"{overview_current}>Research themes</a></h2>{theme_items}</nav></aside>'
     canonical = canonical_url(path)
     schema = structured_data(path)
+    document_title = title if path == '' else f'{title} · TAPAS Group'
     dest.write_text(f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{e(title)} · TAPAS Group</title><meta name="description" content="{e(description, quote=True)}"><link rel="canonical" href="{e(canonical, quote=True)}"><meta name="google-site-verification" content="{GOOGLE_SITE_VERIFICATION}"><meta name="theme-color" content="#006448"><meta name="tapas-preview-revision" content="{PREVIEW_VERSION}"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/site.css?v={PREVIEW_VERSION}"><script src="/assets/site.js?v={PREVIEW_VERSION}" defer></script>{schema}</head>
+<title>{e(document_title)}</title><meta name="description" content="{e(description, quote=True)}"><link rel="canonical" href="{e(canonical, quote=True)}"><meta name="google-site-verification" content="{GOOGLE_SITE_VERIFICATION}"><meta name="theme-color" content="#006448"><meta name="tapas-preview-revision" content="{PREVIEW_VERSION}"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/site.css?v={PREVIEW_VERSION}"><script src="/assets/site.js?v={PREVIEW_VERSION}" defer></script>{schema}</head>
 <body>{nav(active)}<div class="wrap site-layout{' research-shell' if sidebar else ''}">{sidebar}<main id="main" class="site-content">{body}</main></div></body></html>''')
 
 def pub(index, show_year=True):
@@ -218,7 +219,7 @@ home = f'''
 <section class="section home-highlights" id="research-highlights"><div class="wrap"><div class="section-head"><h2>Research at a Glance</h2><a class="text-link" href="/research/">All research <span aria-hidden="true">↗</span></a></div><div class="highlights-grid">{highlights}</div></div></section>
 <section class="section band home-join" id="join-us"><div class="wrap"><h2>Interested in joining us?</h2><p>We welcome prospective graduate students and postdoctoral researchers interested in plasma astrophysics, fusion, and basic plasma physics. Contact Muni Zhou: <a class="text-link" href="mailto:muni.zhou@dartmouth.edu">muni.zhou@dartmouth.edu</a></p>{opportunities}{international_opportunities}</div></section>
 '''
-page('', 'Plasma turbulence at Dartmouth', 'Home', home, 'TAPAS — Turbulence And Plasmas Across Scales. Muni Zhou’s group at Dartmouth studies plasma turbulence, cosmic magnetism, reconnection, and particle energization.')
+page('', 'Muni Zhou · TAPAS Group · Dartmouth', 'Home', home, 'Muni Zhou is a theoretical plasma physicist at Dartmouth College. The TAPAS Group studies plasma turbulence, cosmic magnetism, magnetic reconnection, radiation, and controlled fusion.')
 
 def research_overview_card(area):
     image = {'image': area['overview_image']} if area.get('overview_image') else (area if area.get('image') else area.get('overview_visual', {}))
