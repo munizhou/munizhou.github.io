@@ -9,7 +9,7 @@ from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'dist'
-SITE_URL = 'https://munizhou.github.io'
+SITE_URL = 'https://munizhou.com'
 GOOGLE_SITE_VERIFICATION = '8P4gv_inQOuskHDlATPAPG7NQb6YltpEl_r385vrDVw'
 data = json.loads((ROOT / 'content.json').read_text())
 paper_records = json.loads((ROOT / 'publications-source.json').read_text())
