@@ -413,7 +413,8 @@
           "details": "Near black holes, neutron stars, and other extreme environments, radiation is not merely a passive byproduct of plasma activity. Particles exchange energy with intense photon fields, high-energy photons create electron–positron pairs, and pairs can annihilate back into radiation. How turbulence energizes a plasma when these radiative and quantum-electrodynamic processes operate together remains an open problem, because the feedback can change the plasma composition, the energy available to each particle, and the spectrum of escaping radiation. This project studies that coupled system using self-consistent kinetic simulations that include inverse-Compton scattering, Klein–Nishina effects, pair production, and annihilation. By sustaining turbulent driving together with consistent particle and photon sources and sinks, we investigate how the plasma reaches a statistical steady state in which radiation, pair loading, and particle energization regulate one another, and how this balance shapes high-energy emission from astrophysical sources.",
           "collaboration": {
             "name": "Dr. Alexander Chernoglazov",
-            "url": "https://www.ias.edu/scholars/alexander-chernoglazov"
+            "url": "https://www.ias.edu/scholars/alexander-chernoglazov",
+            "affiliation": "at IAS/Princeton"
           },
           "keyword": "Radiative kinetic turbulence with QED effects",
           "cover": {
@@ -1012,7 +1013,6 @@
   },
   "principal_investigator": {
     "name": "Muni Zhou",
-    "chinese_name": "周慕霓",
     "role": "Principal investigator",
     "position": "Assistant Professor · Dartmouth College",
     "image": "portrait.jpg",

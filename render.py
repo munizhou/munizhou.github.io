@@ -310,7 +310,8 @@ def project_entry(project, index):
         collaborator_name = e(collaboration['name'])
         if collaboration.get('url', '').startswith(('https://', 'http://')):
             collaborator_name = f'<a class="person-link" href="{e(collaboration["url"], quote=True)}" target="_blank" rel="noopener noreferrer">{collaborator_name}</a>'
-        collaboration_html = f'<p class="project-collaboration">In collaboration with {collaborator_name}.</p>'
+        collaborator_affiliation = f' {e(collaboration["affiliation"])}' if collaboration.get('affiliation') else ''
+        collaboration_html = f'<p class="project-collaboration">In collaboration with {collaborator_name}{collaborator_affiliation}.</p>'
     inline_references = publications if project.get('inline_references') else ''
     trailing_references = '' if project.get('inline_references') else publications
     return f'''<section class="research-project" id="{project['slug']}" aria-labelledby="{project['slug']}-title"><div class="project-writing"><h2 id="{project['slug']}-title">{e(project['title'])}</h2><div class="project-body{' has-cover' if cover else ''}"><div class="project-summary">{cover}{lead_html}{question_html}{summary_html}{details_html}{collaboration_html}{inline_references}</div></div>{gallery}{trailing_references}</div></section>'''
