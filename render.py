@@ -42,7 +42,7 @@ def structured_data(path):
         'name': 'Muni Zhou',
         'alternateName': ['周慕霓', '慕尼周'],
         'url': f'{SITE_URL}/',
-        'image': f'{SITE_URL}/assets/portrait.jpg',
+        'image': f'{SITE_URL}/assets/portrait.webp',
         'jobTitle': 'Assistant Professor of Physics and Astronomy',
         'affiliation': {
             '@type': 'CollegeOrUniversity',
@@ -134,7 +134,7 @@ def pub(index, show_year=True):
     return f'<article class="{css}" data-paper-index="{index}">{year_html}<div><h3>{title_html}</h3><p class="pub-authors">{e(authors)}</p><p class="pub-venue">{metadata}</p></div>{arrow}</article>'
 
 def keyword_links(area, css='project-keywords'):
-    return '<div class="'+css+'">'+''.join('<a href="/research/'+area['slug']+'/#'+x['slug']+'">'+e(x['keyword'])+'</a>' for x in area['projects'])+'</div>'
+    return '<div class="'+css+'">'+''.join('<a href="/research/'+area['slug']+'/#'+x['slug']+'">'+e(x['keyword'])+'</a>' for x in area['projects'] if not x.get('hidden'))+'</div>'
 
 def tags(project):
     return '<div class="tags">'+''.join(f'<span class="tag">{e(t)}</span>' for t in project['tags'])+'</div>'
@@ -156,7 +156,10 @@ def cover_image(project,controls=False):
     y=max(0,min(100,float(position.get('y',50))))
     if Path(cover['image']).suffix.lower()=='.mp4':
         playback='controls' if controls else 'autoplay data-cover-loop'
-        return f'<video class="project-cover-image" src="{asset_url(cover["image"])}" aria-label="{e(cover.get("alt") or project["title"],quote=True)}" {playback} muted loop playsinline preload="metadata" style="object-fit:{fit};object-position:{x:g}% {y:g}%"></video>'
+        poster=f' poster="{asset_url(cover["poster"])}"' if cover.get('poster') else ''
+        source=f'src="{asset_url(cover["image"])}"' if controls or not cover.get('poster') else f'data-src="{asset_url(cover["image"])}"'
+        preload='metadata' if controls else 'none'
+        return f'<video class="project-cover-image" {source}{poster} aria-label="{e(cover.get("alt") or project["title"],quote=True)}" {playback} muted loop playsinline preload="{preload}" style="object-fit:{fit};object-position:{x:g}% {y:g}%"></video>'
     return f'<img class="project-cover-image" src="{asset_url(cover["image"])}" alt="{e(cover.get("alt") or project["title"],quote=True)}" loading="lazy" decoding="async" style="object-fit:{fit};object-position:{x:g}% {y:g}%">'
 
 def science_figure(figure,cls='project-figure'):
@@ -180,6 +183,8 @@ profile_links = ''.join(link(item['url'], e(item['label'])) for item in data['ho
 def highlight_card(item):
     area = next(a for a in areas if a['slug'] == item['area'])
     project = next(p for p in area['projects'] if p['slug'] == item['project'])
+    if project.get('hidden'):
+        return ''
     url = f'/research/{area["slug"]}/#{project["slug"]}'
     highlight_project = project
     if project.get('highlight_cover'):
@@ -208,7 +213,7 @@ home_bio_html = ''.join(f'<p class="home-bio">{e(paragraph)}</p>' for paragraph 
 
 home = f''' 
 <section class="home-masthead">{background_art("density")}<div class="wrap home-masthead-grid"><h1 class="home-group-name">TAPAS</h1><p class="home-group-meaning">Turbulence And Plasmas<br><em>Across Scales</em></p></div></section>
-<section class="home-intro"><div class="wrap home-intro-grid"><img class="home-portrait" src="/assets/portrait.jpg" alt="Muni Zhou" loading="lazy"><div><h2 class="home-name">Muni Zhou<span class="home-chinese-name">周慕霓</span></h2><p class="home-role">{e(data["homepage"]["intro_role"])}</p>{home_bio_html}<div class="actions home-profile-links">{profile_links}</div></div></div></section>
+<section class="home-intro"><div class="wrap home-intro-grid"><img class="home-portrait" src="/assets/portrait.webp" alt="Muni Zhou" loading="lazy"><div><h2 class="home-name">Muni Zhou<span class="home-chinese-name">周慕霓</span></h2><p class="home-role">{e(data["homepage"]["intro_role"])}</p>{home_bio_html}<div class="actions home-profile-links">{profile_links}</div></div></div></section>
 <section class="home-research">{background_art("flow")}<div class="wrap"><div class="home-science-intro"><h2>{e(data["homepage"]["science_title"])}</h2><p class="home-research-description">Using theory and numerical simulations, we study how plasmas generate magnetic fields and transfer energy across scales. We ask how <a href="/research/magnetogenesis/">cosmic magnetic fields originate and grow</a>, how <a href="/research/kinetic-turbulence/">turbulence heats the solar wind</a>, and how <a href="/research/reconnection/">magnetic reconnection reshapes turbulent plasmas</a>. We also explore how <a href="/research/radiative-turbulence/">radiation interacts with relativistic turbulence</a> and what controls <a href="/research/fusion/">energetic-particle transport in fusion plasmas</a>.</p><div class="actions"><a class="text-link" href="/research/">Explore our research <span aria-hidden="true">↗</span></a><a class="text-link" href="/team/">Meet our team <span aria-hidden="true">→</span></a></div></div></div></section>
 <section class="section home-highlights" id="research-highlights"><div class="wrap"><div class="section-head"><h2>Research at a Glance</h2><a class="text-link" href="/research/">All research <span aria-hidden="true">↗</span></a></div><div class="highlights-grid">{highlights}</div></div></section>
 <section class="section band home-join" id="join-us"><div class="wrap"><h2>Interested in joining us?</h2><p>We welcome prospective graduate students and postdoctoral researchers interested in plasma astrophysics, fusion, and basic plasma physics. Contact Muni Zhou: <a class="text-link" href="mailto:muni.zhou@dartmouth.edu">muni.zhou@dartmouth.edu</a></p>{opportunities}{international_opportunities}</div></section>
@@ -218,7 +223,7 @@ page('', 'Plasma turbulence at Dartmouth', 'Home', home, 'TAPAS — Turbulence A
 def research_overview_card(area):
     image = {'image': area['overview_image']} if area.get('overview_image') else (area if area.get('image') else area.get('overview_visual', {}))
     artwork = f'<img src="{asset_url(image["image"])}" alt="{e(area.get("alt", ""), quote=True)}" loading="lazy" decoding="async">' if image.get('image') else ''
-    projects = ''.join(f'<span>{e(project["keyword"])}</span>' for project in area['projects'])
+    projects = ''.join(f'<span>{e(project["keyword"])}</span>' for project in area['projects'] if not project.get('hidden'))
     url = f'/research/{area["slug"]}/'
     return f'''<a class="research-overview-card research-overview-{e(area['slug'], quote=True)}" href="{url}" aria-label="Explore {e(area['title'], quote=True)}"><span class="research-overview-art">{artwork}</span><span class="research-overview-copy"><span class="research-overview-title">{e(area['title'])}</span><span class="research-overview-question">{e(area['question'])}</span><span class="research-overview-projects"><strong>Projects</strong>{projects}</span><span class="research-overview-arrow" aria-hidden="true">↗</span></span></a>'''
 
@@ -319,7 +324,8 @@ def project_entry(project, index):
 for p in areas:
     image = p if p.get('image') else p.get('overview_visual', {})
     figure = f'<div class="theme-banner-art" aria-hidden="true"><img src="{asset_url(image["image"])}" alt="" decoding="async"></div>' if image.get('image') else ''
-    entries = ''.join(project_entry(x,i+1) for i,x in enumerate(p['projects']))
+    visible_projects = [project for project in p['projects'] if not project.get('hidden')]
+    entries = ''.join(project_entry(x,i+1) for i,x in enumerate(visible_projects))
     paragraphs = p.get('body') or [p.get('summary', '')]
     topic_text = ''.join('<p>'+e(s)+'</p>' for s in paragraphs if s.strip())
     body = f'''<div class="wrap"><section class="theme-intro theme-banner theme-{e(p['slug'],quote=True)}{' with-image' if figure else ''}" aria-labelledby="theme-title"><div class="theme-writing"><h1 id="theme-title">{e(p['title'])}</h1><p class="theme-question">{e(p['question'])}</p>{topic_text}<nav class="theme-project-nav" aria-label="Projects in {e(p['title'],quote=True)}"><h2>Projects</h2>{keyword_links(p)}</nav></div>{figure}</section><div class="area-projects">{entries}</div></div>'''

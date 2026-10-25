@@ -39,9 +39,27 @@ document.addEventListener('keydown',event=>{if(event.key==='Escape'&&toggle?.get
 // Keep animated covers still when the reader requests reduced motion.
 if (typeof window.matchMedia === 'function') {
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const updateCoverMotion = () => document.querySelectorAll('video[data-cover-loop]').forEach(video => {
+  const covers = [...document.querySelectorAll('video[data-cover-loop]')];
+  const loadCover = video => {
+    if (!video.src && video.dataset.src) {
+      video.src = video.dataset.src;
+      video.load();
+    }
+    if (!reducedMotion.matches) video.play().catch(() => {});
+  };
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      loadCover(entry.target);
+      observer.unobserve(entry.target);
+    }), {rootMargin:'320px 0px'});
+    covers.forEach(video => observer.observe(video));
+  } else {
+    covers.forEach(loadCover);
+  }
+  const updateCoverMotion = () => covers.forEach(video => {
     if (reducedMotion.matches) video.pause();
-    else video.play().catch(() => {});
+    else if (video.src) video.play().catch(() => {});
   });
   reducedMotion.addEventListener('change', updateCoverMotion);
   updateCoverMotion();

@@ -622,7 +622,7 @@ body{font-size:16px;line-height:1.55;min-height:100vh;display:flex;flex-directio
 .home-research .science-crop{width:74%;height:calc(100% + 48px);aspect-ratio:auto;right:-1%;top:-24px;transform:none;overflow:visible}
 .home-research .science-crop img{width:auto!important;height:112%;left:auto!important;right:0;top:-6%!important;object-fit:contain;-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.12) 9%,rgba(0,0,0,.38) 26%,rgba(0,0,0,.8) 45%,#000 60%);mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.12) 9%,rgba(0,0,0,.38) 26%,rgba(0,0,0,.8) 45%,#000 60%)}
 .home-research .science-art::after{background:linear-gradient(90deg,#fff 0%,#fff 27%,rgba(255,255,255,.9) 36%,rgba(255,255,255,.76) 43%,rgba(255,255,255,.54) 50%,rgba(255,255,255,.27) 59%,rgba(255,255,255,.08) 71%,rgba(255,255,255,0) 84%)}
-.home-masthead .science-crop{inset:0;width:100%;height:100%;min-width:0;transform:none;aspect-ratio:auto;overflow:hidden;background-image:url('/assets/background-density-selected.png');background-size:340px auto;background-position:right center;background-repeat:repeat-x;opacity:.62;filter:saturate(1.35) contrast(1.04)}
+.home-masthead .science-crop{inset:0;width:100%;height:100%;min-width:0;transform:none;aspect-ratio:auto;overflow:hidden;background-image:url('/assets/background-density-selected.webp');background-size:340px auto;background-position:right center;background-repeat:repeat-x;opacity:.62;filter:saturate(1.35) contrast(1.04)}
 .home-masthead .science-crop img{display:none}
 .home-masthead .science-art::after{background:linear-gradient(90deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.9) 18%,rgba(255,255,255,.62) 38%,rgba(255,255,255,.12) 66%,rgba(255,255,255,0) 100%)}
 @media(max-width:760px){
