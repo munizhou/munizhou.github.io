@@ -980,11 +980,6 @@
         "art": "density"
       },
       {
-        "area": "reconnection",
-        "project": "reconnection-in-kinetic-turbulence",
-        "art": "density"
-      },
-      {
         "area": "fusion",
         "project": "alfven-mode-saturation",
         "art": "filaments"
