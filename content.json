@@ -1070,8 +1070,9 @@
       {
         "title": "Selected Research Support",
         "items": [
-          "NSF: Decay and Diffusion of Dynamo-Generated Magnetic Fields in Astrophysical Plasmas · PI · PHY-2512037 · $416,302 · 2025–2028",
+          "NSF: Decay and Diffusion of Dynamo-Generated Magnetic Fields in Astrophysical Plasmas · PI · PHY-2512037 · 2025–2028",
           "INCITE: Extreme Plasmas at the Spacetime Frontier · Co-PI · 2026-2029",
+          "DOE ALCC: Interplay between Magnetic Reconnection and Turbulence · Co-I · Frontier (OLCF) · 2026–2029 · Planned total: 3M node-hours (initial award: 1M node-hours)",
           "NSF ACCESS: Generation and Relaxation of Cosmic Magnetic Fields in a Turbulent Collisionless Plasma · PI · 2024-2025"
         ]
       },
